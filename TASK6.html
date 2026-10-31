@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>World Map Explorer</title>
+</head>
+
+<body>
+
+    <h1 align="center">World Map Explorer</h1>
+
+    <p>
+        Welcome to World Map Explorer!
+        Click on different countries on the world map
+        to explore information about them.
+    </p>
+
+    <hr>
+
+    <h2>Explore Different Countries</h2>
+
+    <!-- World Map Image -->
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg"
+         alt="World Map"
+         width="800"
+         height="450"
+         usemap="#worldmap">
+
+    <!-- Image Map -->
+
+    <map name="worldmap">
+
+        <!-- Circle Shape - India -->
+
+        <area shape="circle"
+              coords="550,220,35"
+              href="https://en.wikipedia.org/wiki/India"
+              alt="India"
+              target="_blank">
+
+        <!-- Rectangle Shape - United States -->
+
+        <area shape="rect"
+              coords="100,100,230,190"
+              href="https://en.wikipedia.org/wiki/United_States"
+              alt="United States of America"
+              target="_blank">
+
+        <!-- Polygon Shape - Australia -->
+
+        <area shape="poly"
+              coords="650,320,700,300,750,330,730,380,680,390,640,360"
+              href="https://en.wikipedia.org/wiki/Australia"
+              alt="Australia"
+              target="_blank">
+
+        <!-- Default Shape - Other Areas -->
+
+        <area shape="default"
+              href="https://en.wikipedia.org/wiki/World"
+              alt="Explore the World"
+              target="_blank">
+
+    </map>
+
+    <hr>
+
+    <h2>Image Map Shapes Used</h2>
+
+    <ul>
+        <li><b>Circle:</b> Used for India.</li>
+        <li><b>Rectangle:</b> Used for United States.</li>
+        <li><b>Polygon:</b> Used for Australia.</li>
+        <li><b>Default:</b> Covers all remaining areas of the image.</li>
+    </ul>
+
+    <hr>
+
+    <h2>How to Use</h2>
+
+    <p>
+        1. Click on the circular region to explore India.
+        <br><br>
+        2. Click on the rectangular region to explore the United States.
+        <br><br>
+        3. Click on the polygon region to explore Australia.
+        <br><br>
+        4. Click anywhere else on the map to explore the world.
+    </p>
+
+</body>
+</html>
